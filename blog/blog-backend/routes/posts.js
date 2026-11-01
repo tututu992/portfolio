@@ -81,6 +81,8 @@ router.delete("/:id",auth,async (req,res)=>{
   const [post] = await pool.query("SELECT * FROM posts WHERE id=?",[id]);
   if(post.length===0) return res.status(404).json({code:404,msg:"文章不存在"});
   if(post[0].author_id!==userId) return res.status(403).json({code:403,msg:"无权删除"})
+  // 先删关联收藏记录，避免触发 user_favorites 外键约束
+  await pool.query("DELETE FROM user_favorites WHERE post_id=?",[id]);
   await pool.query("DELETE FROM posts WHERE id=?",[id]);
   res.json({code:200,msg:"删除成功"})
 })
