@@ -1,0 +1,79 @@
+:root {
+  color-scheme: light;
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: #f6f7f9;
+  color: #1f2328;
+}
+
+a { color: inherit; text-decoration: none; }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 14px 24px;
+  background: #fff;
+  border-bottom: 1px solid #e6e8eb;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.nav .brand { font-weight: 700; font-size: 18px; color: #ff5a1f; }
+.nav .link { color: #57606a; font-size: 14px; }
+.nav .link:hover { color: #ff5a1f; }
+.nav .spacer { flex: 1; }
+.nav .user { font-size: 13px; color: #57606a; }
+
+.wrap { max-width: 1080px; margin: 0 auto; padding: 20px 24px 60px; }
+.card {
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  border-radius: 10px;
+  padding: 16px;
+}
+.row { display: flex; align-items: center; gap: 10px; }
+.between { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.muted { color: #6b7480; font-size: 13px; }
+.price { color: #ff5a1f; font-weight: 700; }
+.title-sm { font-size: 15px; font-weight: 600; }
+
+input, select, textarea {
+  padding: 8px 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+  background: #fff;
+  outline: none;
+}
+input:focus, select:focus, textarea:focus { border-color: #ff5a1f; }
+
+button {
+  padding: 8px 14px;
+  border: 1px solid #d0d7de;
+  background: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+button:hover { border-color: #ff5a1f; color: #ff5a1f; }
+button.primary { background: #ff5a1f; border-color: #ff5a1f; color: #fff; font-weight: 600; }
+button.primary:hover { background: #e84e17; color: #fff; }
+button:disabled { opacity: .55; cursor: not-allowed; }
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: #fff1ec;
+  color: #ff5a1f;
+  font-size: 12px;
+}
+.err { color: #d1242f; font-size: 13px; }
+.empty { text-align: center; color: #6b7480; padding: 48px 0; }
