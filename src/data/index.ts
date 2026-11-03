@@ -54,15 +54,18 @@ export const skills: Skill[] = [
   { name: 'AI 应用开发', category: '其他技能' },
 ]
 
-// 当前暂无项目：在下方数组中新增项目对象即可，组件判空后展示占位提示
-// 示例：
-// {
-//   id: 'my-first-project',
-//   title: '我的第一个项目',
-//   desc: '一句话介绍这个项目做了什么。',
-//   image: 'https://picsum.photos/seed/project1/800/500',
-//   tags: ['React', 'Vite'],
-//   githubUrl: 'https://...',   // 可选，留空则不显示按钮
-//   previewUrl: 'https://...',  // 可选，留空则不显示按钮
-// },
-export const projects: Project[] = []
+// 在下方数组中新增项目对象即可，组件判空后展示占位提示
+// 静态站点类项目放入 public/<目录>/，previewUrl 使用相对路径 ./<目录>/index.html，
+// 这样在 Vercel（根路径）与 GitHub Pages（/portfolio/ 子路径）下都能正常访问
+export const projects: Project[] = [
+  {
+    id: 'tongling-travel',
+    title: '铜陵旅游指导网',
+    desc: '安徽铜陵城市旅游指导网站，含首页、15 处景点大全（分类筛选 + 详情弹层）、美食特产与出行攻略四个页面，响应式布局适配移动端。',
+    image:
+      'https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?image_size=landscape_16_9&prompt=panoramic%20view%20of%20Tongling%20city%20along%20the%20Yangtze%20River%20at%20golden%20sunset%2C%20bronze%20culture%20sculpture%2C%20green%20mountains%20and%20misty%20river%2C%20cinematic%20aerial%20photography',
+    tags: ['HTML', 'CSS', 'JavaScript', '响应式'],
+    githubUrl: 'https://github.com/tututu992/portfolio',
+    previewUrl: './tongling/index.html',
+  },
+]
