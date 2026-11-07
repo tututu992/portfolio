@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="张士扬的个人网站 - 个人介绍、成果、能力与学习经历的展示">
+<meta name="theme-color" content="#f5f0e5">
+<title>张士扬 · 个人网站</title>
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body data-theme="day">
+
+<div class="ink-scene" aria-hidden="true">
+  <div class="ink-mountain ink-mountain-1"></div>
+  <div class="ink-mountain ink-mountain-2"></div>
+  <div class="ink-mountain ink-mountain-3"></div>
+  <span class="ink-seal">士揚</span>
+  <div class="ink-colophon" aria-hidden="true">
+    <span class="ik-name">张士扬</span>
+    <i class="ik-date">丙午·江城</i>
+  </div>
+  <i class="ink-flying1"></i>
+  <i class="ink-flying2"></i>
+  <i class="ink-flying3"></i>
+  <i class="ink-flying4"></i>
+  <i class="ink-flying5"></i>
+  <i class="ink-mote" style="left:10%; top:72%; width:6px; height:6px; --md:17s; --mdelay:-2s"></i>
+  <i class="ink-mote" style="left:22%; top:60%; width:4px; height:4px; --md:21s; --mdelay:-8s"></i>
+  <i class="ink-mote" style="left:48%; top:78%; width:5px; height:5px; --md:15s; --mdelay:-4s"></i>
+  <i class="ink-mote" style="left:66%; top:64%; width:3px; height:3px; --md:23s; --mdelay:-12s"></i>
+  <i class="ink-mote" style="left:82%; top:74%; width:5px; height:5px; --md:18s; --mdelay:-6s"></i>
+  <i class="ink-mote" style="left:36%; top:84%; width:3px; height:3px; --md:20s; --mdelay:-15s"></i>
+  <i class="ink-leaf leaf-a" style="--x:14%; --s:19px; --dur:17s; --delay:-3s"></i>
+  <i class="ink-leaf leaf-b" style="--x:30%; --s:14px; --dur:21s; --delay:-10s"></i>
+  <i class="ink-leaf leaf-a" style="--x:55%; --s:16px; --dur:15s; --delay:-6s"></i>
+  <i class="ink-leaf leaf-b" style="--x:74%; --s:18px; --dur:19s; --delay:-13s"></i>
+  <i class="ink-leaf leaf-a" style="--x:88%; --s:13px; --dur:23s; --delay:-1s"></i>
+</div>
+
+<div id="boot" class="boot">
+  <div class="boot-inner">
+    <div class="boot-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+    <p class="boot-title">张士扬 · 个人网站</p>
+    <p class="boot-sub" id="bootSub">正在展开折扇…</p>
+    <button id="bootSkip" class="boot-skip" type="button">跳过 →</button>
+  </div>
+</div>
+
+<section id="intro" class="intro" aria-label="入场介绍" role="button" tabindex="0" aria-describedby="introHint">
+  <div class="intro-vignette" aria-hidden="true"></div>
+  <div class="intro-leaves" aria-hidden="true">
+    <i class="intro-leaf" style="--x:6%;  --dur:14s; --delay:0s;    --s:18px"></i>
+    <i class="intro-leaf" style="--x:16%; --dur:18s; --delay:-7s;   --s:13px"></i>
+    <i class="intro-leaf alt" style="--x:27%; --dur:12s; --delay:-3s; --s:21px"></i>
+    <i class="intro-leaf" style="--x:38%; --dur:20s; --delay:-11s;  --s:14px"></i>
+    <i class="intro-leaf alt" style="--x:56%; --dur:15s; --delay:-5s; --s:17px"></i>
+    <i class="intro-leaf" style="--x:67%; --dur:16s; --delay:-9s;   --s:12px"></i>
+    <i class="intro-leaf" style="--x:78%; --dur:13s; --delay:-2s;   --s:19px"></i>
+    <i class="intro-leaf" style="--x:90%; --dur:19s; --delay:-13s;  --s:15px"></i>
+  </div>
+  <div class="intro-inner">
+    <p class="intro-kicker" id="introKicker"></p>
+    <h1 class="intro-name" id="introName"></h1>
+    <p class="intro-title" id="introTitle"></p>
+    <p class="intro-tagline" id="introTagline"></p>
+    <div class="intro-desc" id="introDesc"></div>
+    <p class="intro-hint" id="introHint"><span class="intro-pulse" aria-hidden="true"></span><span id="introHintText"></span></p>
+  </div>
+  <p class="intro-foot" id="introFoot"></p>
+</section>
+
+<noscript>
+  <style>.boot, .intro { display: none !important; }</style>
+  <p style="padding:24px;margin:0;color:#f2f4f2;font:14px/1.7 system-ui,sans-serif">
+    这个个人网站由 data.js 与 app.js 渲染，需要启用 JavaScript 才能显示折扇内容。
+  </p>
+</noscript>
+
+<main id="desktop" class="desktop">
+
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <div>
+        <p class="brand-name">张士扬 · 个人网站</p>
+        <p class="brand-sub" id="brandSub"></p>
+      </div>
+    </div>
+    <div class="topbar-meta">
+      <span class="ver" id="topVersion"></span>
+      <span class="topbar-div" aria-hidden="true"></span>
+      <span class="topbar-hint" id="topHint"></span>
+      <button id="searchBtn" class="icon-btn" type="button" title="搜索项目（Ctrl / ⌘ + K）" aria-label="搜索项目" aria-expanded="false" aria-controls="searchPanel">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" focusable="false">
+          <circle cx="7" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+          <path d="M10.4 10.4 L14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+        </svg>
+      </button>
+      <button id="introBtn" class="icon-btn" type="button" title="返回入场封面" aria-label="返回入场封面">⤺</button>
+      <button id="themeBtn" class="icon-btn" type="button" title="切换壁纸" aria-label="切换壁纸">◐</button>
+    </div>
+  </header>
+
+  <div id="searchPanel" class="search-panel" hidden role="dialog" aria-modal="true" aria-label="搜索">
+    <div class="search-box">
+      <svg class="search-icon" viewBox="0 0 16 16" width="15" height="15" aria-hidden="true" focusable="false">
+        <circle cx="7" cy="7" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"></circle>
+        <path d="M10.4 10.4 L14 14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path>
+      </svg>
+      <input id="searchInput" type="search" placeholder="搜索项目、标签、分类…" autocomplete="off" spellcheck="false" aria-label="搜索关键词">
+      <kbd class="search-kbd">Esc</kbd>
+    </div>
+    <ul id="searchResults" class="search-results" role="listbox" aria-label="搜索结果"></ul>
+  </div>
+
+  <div class="desktop-stage">
+    <div id="fanStage" class="fan-stage" aria-label="折扇">
+      <div id="fan" class="fan"></div>
+      <button id="fanPivot" class="fan-pivot" type="button" title="收起折扇" aria-label="收起或展开折扇" aria-pressed="false">
+        <span class="pivot-ico" aria-hidden="true"></span>
+      </button>
+      <p class="fan-caption" id="fanCaption"></p>
+    </div>
+  </div>
+
+  <div id="bladeDetail" class="blade-detail" hidden role="dialog" aria-modal="false" aria-label="扇叶详情">
+    <header class="bd-bar">
+      <button class="bd-size" type="button" data-bd-size title="切换尺寸">⤢</button>
+      <button class="bd-close" type="button" data-bd-close title="关闭" aria-label="关闭">✕</button>
+    </header>
+    <div class="bd-body" id="bladeDetailBody"></div>
+    <div class="bd-resizer" data-bd-resizer aria-hidden="true"></div>
+  </div>
+
+  <div id="termPanel" class="term-panel" hidden role="dialog" aria-modal="false" aria-label="终端"></div>
+
+  <div id="ctxMenu" class="ctx-menu" hidden role="menu" aria-label="桌面右键菜单">
+    <button class="ctx-item" type="button" role="menuitem" data-ctx="refresh"><span class="ctx-ico" aria-hidden="true">↻</span>刷新桌面</button>
+    <button class="ctx-item" type="button" role="menuitem" data-ctx="wallpaper"><span class="ctx-ico" aria-hidden="true">◐</span>切换壁纸</button>
+    <div class="ctx-sep" aria-hidden="true"></div>
+    <button class="ctx-item" type="button" role="menuitem" data-ctx="terminal"><span class="ctx-ico" aria-hidden="true">>_</span>打开终端</button>
+    <button class="ctx-item" type="button" role="menuitem" data-ctx="toggle"><span class="ctx-ico" aria-hidden="true">❯</span>展开 / 收起折扇</button>
+    <button class="ctx-item" type="button" role="menuitem" data-ctx="intro"><span class="ctx-ico" aria-hidden="true">⤺</span>返回封面</button>
+  </div>
+
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="./data.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>
